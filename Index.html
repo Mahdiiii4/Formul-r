@@ -1,26 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <title>Formulär</title>
 </head>
 <body>
-    <form action="contact.php" method="post">
-        <p>
-            <label for="un">Användarnamn:</label>
-            <input name="username" id="un" required/>
-        </p>
-        <p>
-            <label for="pw">Lösenord:</label>
-            <input name="password" id="pw" required/>
-        </p>
-
-        <p>
-            <input type="submit" value="Logga in"/>
-        </p>
-    </form>
+    <div class="wrapper">
+        <form action="tack.html" method="get">
+            <p>
+                <label for="un">Namn:</label>
+                <input name="username" id="un" required/>
+            </p>
+            <p>
+                <label for="y/n">Har du körkort?</label>
+    
+                <label for="ja" id="y/n">Ja</label>
+                <input type="radio" name="y/n" id="ja" required/>
+    
+                <label for="nej" id="y/n">Nej</label>
+                <input type="radio" name="y/n" id="nej" required/>
+            </p>
+            <p>
+                <label for="dricka">Vad gillar du för dricka?</label>
+    
+                <label for="vatten" id="dricka">Vatten</label>
+                <input type="checkbox" name="checkbox" id="vatten">
+                
+                <label for="mjölk" id="dricka">Mjölk</label>
+                <input type="checkbox" name="checkbox" id="mjölk">
+    
+                <label for="kaffe" id="dricka">Kaffe</label>
+                <input type="checkbox" name="checkbox" id="kaffe">
+            </p>
+            <p>
+                <nav>
+                    <ul>
+                        <li><a href="Tack.html"><input type="submit" value="Skica in"/></a></li>
+                    </ul>
+                </nav>
+            </p>
+        </form>
+    </div>
 </body>
 </html>
